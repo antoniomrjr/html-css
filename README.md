@@ -1,2 +1,2 @@
 # html-css
-estudos html-css-js
+estudos html-css
