@@ -1,0 +1,13 @@
+border, margin, outline
+
+
+
+box-level:
+- sempre se inicia em uma linha nova e ocupa a largura inteira da tela
+- 100% do viewport
+- ex tag: <div> <h1> <p> <main> <header> <nav> <article> <aside> <footer> <form> <vídeo>
+
+
+inline-level:
+- ele não pula pra próxima linha, ele fica na mesma linha
+- ex tag: <span> <a> <code> <small> <strong> <em> <sup> <sub> <label> <button> <input> <select>

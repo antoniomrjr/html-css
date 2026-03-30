@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+        
+    <picture> <!--em "picture" sempre ir do MENOR pro MAIOR, de CIMA pra BAIXO-->
+       
+        <!--mobile primeiro--> 
+       <source media="(max-width: 750px)" srcset="imagens/foto-p.png" sizes="100vw" type="image/png"> <!--lembrar do 'px' no tamanho da imagem-->
+       
+       <!--tablet-->
+       <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" sizes="100vw" type="image/png">
+       
+       <!--desktop fallback-->
+       <img src="imagens/foto-g.png" alt="Imagem flexível" sizes="100vw">
+
+       <h1>Reproduzindo áudios</h1>
+       <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+       <audio preload="metadata" autoplay controls loop> <!--lembrar de usar o parametro 'controls' para aparecer os botões de play-->
+          <source src="midia/somdetaco.mp3" type="audio/mpeg">
+          <source src="midia/somdetaco.ogg" type="audio/ogg">
+          <source src="midia/somdetaco.mp3" type="audio/wav"> <!--arquivos 'wav' são MUITO PESADOS, NÃO recomendado usar em sites-->
+          <p>Infelizmente se navegador não consegue reproduzir áudio. <a href="midia/somdetaco.mp3">CLique aqui</a> para baixar o arquivo mp3</p>
+
+       </audio>
+
+    </picture>
+
+</body>
+</html>
