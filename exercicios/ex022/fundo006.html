@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /* pra imagem ocupar 100% da viewport */
-            /*background-size: contain;*/
+            background-size: cover; /* pra imagem ocupar 100% da viewport 
+            background-repeat: repeat-y;
+            background-attachment: fixed; */
+
+            /* Shorthand - backgorund 
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /* esse não funciona na shorthand */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,6 +37,15 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quod quo. Repellendus commodi quaerat fuga, tenetur, dolore voluptates excepturi blanditiis nisi eos sequi minus nobis sed expedita nam, perspiciatis rerum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat ab consequatur facere esse laudantium tenetur ratione saepe explicabo nobis neque obcaecati! Eius et quis id? Itaque reprehenderit veniam odio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, suscipit autem nobis vero ipsa labore aperiam quas nemo ullam modi itaque minus quo impedit nam? Doloremque deserunt consequuntur sunt ipsa?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quod quo. Repellendus commodi quaerat fuga, tenetur, dolore voluptates excepturi blanditiis nisi eos sequi minus nobis sed expedita nam, perspiciatis rerum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat ab consequatur facere esse laudantium tenetur ratione saepe explicabo nobis neque obcaecati! Eius et quis id? Itaque reprehenderit veniam odio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, suscipit autem nobis vero ipsa labore aperiam quas nemo ullam modi itaque minus quo impedit nam? Doloremque deserunt consequuntur sunt ipsa?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quod quo. Repellendus commodi quaerat fuga, tenetur, dolore voluptates excepturi blanditiis nisi eos sequi minus nobis sed expedita nam, perspiciatis rerum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat ab consequatur facere esse laudantium tenetur ratione saepe explicabo nobis neque obcaecati! Eius et quis id? Itaque reprehenderit veniam odio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, suscipit autem nobis vero ipsa labore aperiam quas nemo ullam modi itaque minus quo impedit nam? Doloremque deserunt consequuntur sunt ipsa?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quod quo. Repellendus commodi quaerat fuga, tenetur, dolore voluptates excepturi blanditiis nisi eos sequi minus nobis sed expedita nam, perspiciatis rerum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat ab consequatur facere esse laudantium tenetur ratione saepe explicabo nobis neque obcaecati! Eius et quis id? Itaque reprehenderit veniam odio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, suscipit autem nobis vero ipsa labore aperiam quas nemo ullam modi itaque minus quo impedit nam? Doloremque deserunt consequuntur sunt ipsa?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quod quo. Repellendus commodi quaerat fuga, tenetur, dolore voluptates excepturi blanditiis nisi eos sequi minus nobis sed expedita nam, perspiciatis rerum!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat ab consequatur facere esse laudantium tenetur ratione saepe explicabo nobis neque obcaecati! Eius et quis id? Itaque reprehenderit veniam odio?</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, suscipit autem nobis vero ipsa labore aperiam quas nemo ullam modi itaque minus quo impedit nam? Doloremque deserunt consequuntur sunt ipsa?</p>
     </main>
